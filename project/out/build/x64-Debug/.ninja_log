@@ -1,0 +1,11 @@
+# ninja log v6
+31	124	7846225426579481	CMakeFiles/Project.dir/src/Vector2.obj	92c45b3851cec951
+14	206	7846225426412355	CMakeFiles/Project.dir/src/Matrix.obj	7e535252e6607ec0
+36	207	7846225426630211	CMakeFiles/Project.dir/src/Vector3.obj	e6ae62ae600f6a8
+41	212	7846225426680221	CMakeFiles/Project.dir/src/Vector4.obj	ded20d967560eb07
+20	348	7846225426481612	CMakeFiles/Project.dir/src/Texture.obj	33bf82fb4b2dc5fa
+10	389	7846225426377187	CMakeFiles/Project.dir/src/LeakDetector.obj	7fc1c63e566a85b4
+25	488	7846225426525482	CMakeFiles/Project.dir/src/Timer.obj	5596045879bc7831
+17	495	7846225426437528	CMakeFiles/Project.dir/src/Renderer.obj	4f3e67feab81e50c
+6	742	7846225426337178	CMakeFiles/Project.dir/src/main.obj	a185d8a38c8c06ec
+742	1245	7846225433695393	Project.exe	192e479d8c8ef5ff
