@@ -20,9 +20,6 @@ Renderer::Renderer(SDL_Window* pWindow) :
 	m_pFrontBuffer = SDL_GetWindowSurface(pWindow);
 	m_pBackBuffer = SDL_CreateRGBSurface(0, m_Width, m_Height, 32, 0, 0, 0, 0);
 	m_pBackBufferPixels = (uint32_t*)m_pBackBuffer->pixels;
-
-	//Initialize Camera
-	m_Camera.Initialize(60.f, { 0.f, 0.f, -10.f });
 }
 
 Renderer::~Renderer()
@@ -31,7 +28,8 @@ Renderer::~Renderer()
 
 void Renderer::Update(Timer* pTimer)
 {
-	m_Camera.Update(pTimer);
+	m_Camera.aspectRatio = float(m_Width) / float(m_Height);
+	m_Camera.Update(pTimer);;
 }
 
 void Renderer::Render()
@@ -66,14 +64,19 @@ void Renderer::VertexTransformationFunction(const std::vector<Vertex>& vertices_
 	vertices_out.clear();
 	vertices_out.reserve(vertices_in.size());
 
+	const Matrix& view = m_Camera.cameraToWorld.Inverse(m_Camera.cameraToWorld);
+
 	for (const auto& v : vertices_in)
 	{
 		Vertex out = v;
 
-		// Apply camera view matrix (just to make movement visible)
-		Vector3 viewPos = m_Camera.viewMatrix.TransformPoint(v.position);
+		// Transform to view space
+		Vector4 viewPos = view.TransformPoint(Vector4(v.position, 1.f));
 
-		// Convert simple NDC [-1, 1] to screen coordinates
+		// Perspective divide (simple, no projection yet)
+		out.position = { viewPos.x, viewPos.y, viewPos.z };
+
+		// Map to screen space (just visualize Z depth for now)
 		out.position.x = (viewPos.x + 1.f) * 0.5f * m_Width;
 		out.position.y = (1.f - viewPos.y) * 0.5f * m_Height;
 

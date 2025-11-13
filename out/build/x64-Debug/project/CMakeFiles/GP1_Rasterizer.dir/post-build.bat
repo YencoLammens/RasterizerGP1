@@ -1,0 +1,29 @@
+@echo off
+cd /D "C:\School\2025-26\Graphics prog 1\Rasterizer project\RasterizerGP1\out\build\x64-Debug\project" || (set FAIL_LINE=2& goto :ABORT)
+"C:\Program Files\Microsoft Visual Studio\2022\Enterprise\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E copy "C:/School/2025-26/Graphics prog 1/Rasterizer project/RasterizerGP1/project/resources/tuktuk.obj" "C:/School/2025-26/Graphics prog 1/Rasterizer project/RasterizerGP1/out/build/x64-Debug/project/resources/" || (set FAIL_LINE=3& goto :ABORT)
+cd /D "C:\School\2025-26\Graphics prog 1\Rasterizer project\RasterizerGP1\out\build\x64-Debug\project" || (set FAIL_LINE=4& goto :ABORT)
+"C:\Program Files\Microsoft Visual Studio\2022\Enterprise\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E copy "C:/School/2025-26/Graphics prog 1/Rasterizer project/RasterizerGP1/project/resources/tuktuk.png" "C:/School/2025-26/Graphics prog 1/Rasterizer project/RasterizerGP1/out/build/x64-Debug/project/resources/" || (set FAIL_LINE=5& goto :ABORT)
+cd /D "C:\School\2025-26\Graphics prog 1\Rasterizer project\RasterizerGP1\out\build\x64-Debug\project" || (set FAIL_LINE=6& goto :ABORT)
+"C:\Program Files\Microsoft Visual Studio\2022\Enterprise\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E copy "C:/School/2025-26/Graphics prog 1/Rasterizer project/RasterizerGP1/project/resources/uv_grid.png" "C:/School/2025-26/Graphics prog 1/Rasterizer project/RasterizerGP1/out/build/x64-Debug/project/resources/" || (set FAIL_LINE=7& goto :ABORT)
+cd /D "C:\School\2025-26\Graphics prog 1\Rasterizer project\RasterizerGP1\out\build\x64-Debug\project" || (set FAIL_LINE=8& goto :ABORT)
+"C:\Program Files\Microsoft Visual Studio\2022\Enterprise\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E copy "C:/School/2025-26/Graphics prog 1/Rasterizer project/RasterizerGP1/project/resources/uv_grid_2.png" "C:/School/2025-26/Graphics prog 1/Rasterizer project/RasterizerGP1/out/build/x64-Debug/project/resources/" || (set FAIL_LINE=9& goto :ABORT)
+cd /D "C:\School\2025-26\Graphics prog 1\Rasterizer project\RasterizerGP1\out\build\x64-Debug\project" || (set FAIL_LINE=10& goto :ABORT)
+"C:\Program Files\Microsoft Visual Studio\2022\Enterprise\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E copy "C:/School/2025-26/Graphics prog 1/Rasterizer project/RasterizerGP1/project/resources/vehicle.obj" "C:/School/2025-26/Graphics prog 1/Rasterizer project/RasterizerGP1/out/build/x64-Debug/project/resources/" || (set FAIL_LINE=11& goto :ABORT)
+cd /D "C:\School\2025-26\Graphics prog 1\Rasterizer project\RasterizerGP1\out\build\x64-Debug\project" || (set FAIL_LINE=12& goto :ABORT)
+"C:\Program Files\Microsoft Visual Studio\2022\Enterprise\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E copy "C:/School/2025-26/Graphics prog 1/Rasterizer project/RasterizerGP1/project/resources/vehicle_diffuse.png" "C:/School/2025-26/Graphics prog 1/Rasterizer project/RasterizerGP1/out/build/x64-Debug/project/resources/" || (set FAIL_LINE=13& goto :ABORT)
+cd /D "C:\School\2025-26\Graphics prog 1\Rasterizer project\RasterizerGP1\out\build\x64-Debug\project" || (set FAIL_LINE=14& goto :ABORT)
+"C:\Program Files\Microsoft Visual Studio\2022\Enterprise\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E copy "C:/School/2025-26/Graphics prog 1/Rasterizer project/RasterizerGP1/project/resources/vehicle_gloss.png" "C:/School/2025-26/Graphics prog 1/Rasterizer project/RasterizerGP1/out/build/x64-Debug/project/resources/" || (set FAIL_LINE=15& goto :ABORT)
+cd /D "C:\School\2025-26\Graphics prog 1\Rasterizer project\RasterizerGP1\out\build\x64-Debug\project" || (set FAIL_LINE=16& goto :ABORT)
+"C:\Program Files\Microsoft Visual Studio\2022\Enterprise\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E copy "C:/School/2025-26/Graphics prog 1/Rasterizer project/RasterizerGP1/project/resources/vehicle_normal.png" "C:/School/2025-26/Graphics prog 1/Rasterizer project/RasterizerGP1/out/build/x64-Debug/project/resources/" || (set FAIL_LINE=17& goto :ABORT)
+cd /D "C:\School\2025-26\Graphics prog 1\Rasterizer project\RasterizerGP1\out\build\x64-Debug\project" || (set FAIL_LINE=18& goto :ABORT)
+"C:\Program Files\Microsoft Visual Studio\2022\Enterprise\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E copy "C:/School/2025-26/Graphics prog 1/Rasterizer project/RasterizerGP1/project/resources/vehicle_specular.png" "C:/School/2025-26/Graphics prog 1/Rasterizer project/RasterizerGP1/out/build/x64-Debug/project/resources/" || (set FAIL_LINE=19& goto :ABORT)
+cd /D "C:\School\2025-26\Graphics prog 1\Rasterizer project\RasterizerGP1\out\build\x64-Debug\project" || (set FAIL_LINE=20& goto :ABORT)
+"C:\Program Files\Microsoft Visual Studio\2022\Enterprise\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E copy "C:/School/2025-26/Graphics prog 1/Rasterizer project/RasterizerGP1/project/libs/SDL2-2.30.7/lib/x64/SDL2.dll" "C:/School/2025-26/Graphics prog 1/Rasterizer project/RasterizerGP1/out/build/x64-Debug/project" || (set FAIL_LINE=21& goto :ABORT)
+cd /D "C:\School\2025-26\Graphics prog 1\Rasterizer project\RasterizerGP1\out\build\x64-Debug\project" || (set FAIL_LINE=22& goto :ABORT)
+"C:\Program Files\Microsoft Visual Studio\2022\Enterprise\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E copy "C:/School/2025-26/Graphics prog 1/Rasterizer project/RasterizerGP1/project/libs/SDL2_image-2.8.2/lib/x64/SDL2_image.dll" "C:/School/2025-26/Graphics prog 1/Rasterizer project/RasterizerGP1/out/build/x64-Debug/project" || (set FAIL_LINE=23& goto :ABORT)
+goto :EOF
+
+:ABORT
+set ERROR_CODE=%ERRORLEVEL%
+echo Batch file failed at line %FAIL_LINE% with errorcode %ERRORLEVEL%
+exit /b %ERROR_CODE%

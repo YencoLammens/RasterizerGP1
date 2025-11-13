@@ -209,8 +209,16 @@ namespace dae {
 
 	Matrix Matrix::CreatePerspectiveFovLH(float fov, float aspect, float zn, float zf)
 	{
-		//TODO
-		return {};
+		// Left-handed perspective projection
+		const float yScale = 1.0f / tanf(fov / 2.f);
+		const float xScale = yScale / aspect;
+
+		return {
+			{ xScale, 0,      0,                   0 },
+			{ 0,      yScale, 0,                   0 },
+			{ 0,      0,      zf / (zf - zn),      1 },
+			{ 0,      0,     (-zn * zf) / (zf - zn), 0 }
+		};
 	}
 
 	Vector3 Matrix::GetAxisX() const

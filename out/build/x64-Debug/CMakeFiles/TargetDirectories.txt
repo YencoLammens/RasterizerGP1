@@ -1,0 +1,5 @@
+C:/School/2025-26/Graphics prog 1/Rasterizer project/RasterizerGP1/out/build/x64-Debug/CMakeFiles/edit_cache.dir
+C:/School/2025-26/Graphics prog 1/Rasterizer project/RasterizerGP1/out/build/x64-Debug/CMakeFiles/rebuild_cache.dir
+C:/School/2025-26/Graphics prog 1/Rasterizer project/RasterizerGP1/out/build/x64-Debug/project/CMakeFiles/GP1_Rasterizer.dir
+C:/School/2025-26/Graphics prog 1/Rasterizer project/RasterizerGP1/out/build/x64-Debug/project/CMakeFiles/edit_cache.dir
+C:/School/2025-26/Graphics prog 1/Rasterizer project/RasterizerGP1/out/build/x64-Debug/project/CMakeFiles/rebuild_cache.dir
