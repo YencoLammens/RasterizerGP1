@@ -6,9 +6,6 @@
 38	391	7846229498227736	project/CMakeFiles/GP1_Rasterizer.dir/src/Vector3.cpp.obj	929515000111f411
 23	546	7846229498071445	project/CMakeFiles/GP1_Rasterizer.dir/src/Texture.cpp.obj	2f62460e7f0dc92b
 27	704	7846229498114456	project/CMakeFiles/GP1_Rasterizer.dir/src/Timer.cpp.obj	7e8d7cab120053af
-36	735	7847003400815264	project/CMakeFiles/GP1_Rasterizer.dir/src/Renderer.cpp.obj	f9924b4b109212a8
-31	947	7847003400765274	project/CMakeFiles/GP1_Rasterizer.dir/src/main.cpp.obj	c43783b70be441fe
-948	1502	7847003409930754	project/GP1_Rasterizer.exe	6388aa84a8913be5
-51	1153	7847425882498603	project/CMakeFiles/GP1_Rasterizer.dir/src/Renderer.cpp.obj	f9924b4b109212a8
-46	1211	7847425882447080	project/CMakeFiles/GP1_Rasterizer.dir/src/main.cpp.obj	c43783b70be441fe
-1211	2085	7847425894084461	project/GP1_Rasterizer.exe	6388aa84a8913be5
+25	664	7847532446988843	project/CMakeFiles/GP1_Rasterizer.dir/src/Renderer.cpp.obj	f9924b4b109212a8
+6	933	7847522974997029	project/CMakeFiles/GP1_Rasterizer.dir/src/main.cpp.obj	c43783b70be441fe
+665	1234	7847532453392856	project/GP1_Rasterizer.exe	6388aa84a8913be5

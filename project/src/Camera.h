@@ -6,7 +6,7 @@
 #include "Vector3.h"
 #include "Matrix.h"
 #include "MathHelpers.h"
-
+#include <iostream>
 namespace dae
 {
 	struct Camera final
@@ -23,7 +23,7 @@ namespace dae
 		Vector3 up{ Vector3::UnitY };
 		Vector3 right{ Vector3::UnitX };
 
-		float fovAngle{ 90.f };
+		float fovAngle{ 60.f };
 		float fovScale{};
 		float aspectRatio{ 1.f };
 
@@ -70,7 +70,14 @@ namespace dae
 
 		void CalculateViewMatrix()
 		{
-			viewMatrix = Matrix::CreateLookAtLH(origin, forward, Vector3::UnitY);
+			right = Vector3::Cross(forward, Vector3::UnitY).Normalized();
+			up = Vector3::Cross(right, forward).Normalized();
+
+			cameraToWorld = Matrix(right, up, forward, origin);
+
+			viewMatrix = Matrix::Inverse(cameraToWorld);
+
+			//viewMatrix = Matrix::CreateLookAtLH(origin, forward, Vector3::UnitY);
 		}
 
 		void CalculateProjectionMatrix()
@@ -107,7 +114,9 @@ namespace dae
 				Matrix rotX = Matrix::CreateRotationX(totalPitch);
 				Matrix rotY = Matrix::CreateRotationY(totalYaw);
 				Matrix rot = rotY * rotX;
+
 				forward = rot.TransformVector(-Vector3::UnitZ).Normalized(); // forward is -Z
+
 			}
 			// Dolly (LMB)
 			else if (mouseState & SDL_BUTTON(SDL_BUTTON_LEFT) && !(mouseState & SDL_BUTTON(SDL_BUTTON_RIGHT)))
@@ -131,6 +140,7 @@ namespace dae
 		{
 			fovAngle = _fovAngle;
 			fovScale = tanf((_fovAngle * TO_RADIANS) / 2.f);
+			std::cout << fovAngle << " degrees -> fovScale: " << fovScale << std::endl;
 		}
 	};
 }
